@@ -30,7 +30,7 @@ http://leigh.familyds.com:8080/users - The unique list of users that have trades
 
 
 **Source**
-Folder lindacare-app holds the frontend Angular 6 application
+Folder lindacare-app holds the frontend Angular 6 application  
 Folder src hold the java backend  (Using Spring boot)
 
 
