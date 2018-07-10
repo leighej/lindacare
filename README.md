@@ -2,7 +2,7 @@
 Lindacare test
 
 
-Url for application: http://leigh.familyds.com:8080/  
+Url for application frontend: http://leigh.familyds.com:8080/
   
 Rest endpoints  
   
