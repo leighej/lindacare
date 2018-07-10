@@ -28,3 +28,9 @@ http://leigh.familyds.com:8080/users - The unique list of users that have trades
 
 **NOTE:**  It appears that the frontend does not work on IE11 (Windows 7).  I don't have time to find out why.  But it works fine in Chrome / Firefox / Edge
 
+
+**Source**
+Folder lindacare-app holds the frontend Angular 6 application
+Folder src hold the java backend  (Using Spring boot)
+
+
