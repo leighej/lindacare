@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'node.js@8.9.0' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node.js@8.9.0
+8 silly fetchNamedPackageData node.js
+9 silly mapToRegistry name node.js
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://diplazium.cc.cec.eu.int:8081/repository/npm-all/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'node.js',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'node.js',
+12 silly mapToRegistry   name: 'node.js',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://diplazium.cc.cec.eu.int:8081/repository/npm-all/node.js
+14 verbose get http://diplazium.cc.cec.eu.int:8081/repository/npm-all/node.js not expired, no request
+15 silly fetchNamedPackageData No valid target from cache, forcing network
+16 verbose request uri http://diplazium.cc.cec.eu.int:8081/repository/npm-all/node.js
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 8:34:22 AM
+19 verbose request id 0ad9a57b69665c77
+20 http request GET http://diplazium.cc.cec.eu.int:8081/repository/npm-all/node.js
+21 http 200 http://diplazium.cc.cec.eu.int:8081/repository/npm-all/node.js
+22 verbose headers { date: 'Tue, 10 Jul 2018 06:34:22 GMT',
+22 verbose headers   server: 'Nexus/3.5.2-01 (OSS)',
+22 verbose headers   'x-frame-options': 'SAMEORIGIN',
+22 verbose headers   'x-content-type-options': 'nosniff',
+22 verbose headers   'content-type': 'application/json',
+22 verbose headers   'content-length': '1104' }
+23 silly get cb [ 200,
+23 silly get   { date: 'Tue, 10 Jul 2018 06:34:22 GMT',
+23 silly get     server: 'Nexus/3.5.2-01 (OSS)',
+23 silly get     'x-frame-options': 'SAMEORIGIN',
+23 silly get     'x-content-type-options': 'nosniff',
+23 silly get     'content-type': 'application/json',
+23 silly get     'content-length': '1104' } ]
+24 verbose get saving node.js to C:\Users\emrysle\AppData\Roaming\npm-cache\diplazium.cc.cec.eu.int_8081\repository\npm-all\node.js\.cache.json
+25 verbose correctMkdir C:\Users\emrysle\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+26 silly fetchPackageMetaData Error: No compatible version found: node.js@8.9.0
+26 silly fetchPackageMetaData Valid install targets:
+26 silly fetchPackageMetaData 0.0.0
+26 silly fetchPackageMetaData
+26 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:178:16)
+26 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+26 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:20:8
+26 silly fetchPackageMetaData     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:174:7)
+26 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:241:18
+26 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+26 silly fetchPackageMetaData  error for node.js@8.9.0 { Error: No compatible version found: node.js@8.9.0
+26 silly fetchPackageMetaData Valid install targets:
+26 silly fetchPackageMetaData 0.0.0
+26 silly fetchPackageMetaData
+26 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:178:16)
+26 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+26 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:20:8
+26 silly fetchPackageMetaData     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:174:7)
+26 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:241:18
+26 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15) code: 'ETARGET' }
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: No compatible version found: node.js@8.9.0
+31 verbose stack Valid install targets:
+31 verbose stack 0.0.0
+31 verbose stack
+31 verbose stack     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:178:16)
+31 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+31 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:20:8
+31 verbose stack     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:174:7)
+31 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:241:18
+31 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+32 verbose cwd C:\PGM\R3-DEV\workspaces\test\lindacare-app
+33 error Windows_NT 6.1.7601
+34 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "node.js@8.9.0"
+35 error node v6.10.2
+36 error npm  v3.10.10
+37 error code ETARGET
+38 error notarget No compatible version found: node.js@8.9.0
+38 error notarget Valid install targets:
+38 error notarget 0.0.0
+39 error notarget This is most likely not a problem with npm itself.
+39 error notarget In most cases you or one of your dependencies are requesting
+39 error notarget a package version that doesn't exist.
+40 verbose exit [ 1, true ]

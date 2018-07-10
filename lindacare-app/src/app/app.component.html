@@ -1,0 +1,34 @@
+<p-panel header="Lindacare Test App">
+    <div>
+      <h4>Filter by User ID</h4>
+      <p-dropdown [options]="users" [(ngModel)]="selectedUser" (onChange)="changeUser()"></p-dropdown>
+    </div>
+    <br/>
+    <p-table [value]="trades" sortField="timePlaced" [paginator]="true" [rowsPerPageOptions]="[5, 10, 20, 25, 30, 40, 50]" [rows]="10">
+        <ng-template pTemplate="header">
+            <tr>
+                <th *ngFor="let col of cols" [pSortableColumn]="col.field">
+                    {{col.header}}
+                    <p-sortIcon [field]="col.field"></p-sortIcon>
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-trade>
+            <tr>
+                <td *ngFor="let col of cols">
+                        {{trade[col.field]}}
+                </td>
+            </tr>
+        </ng-template><ng-template pTemplate="emptymessage" let-columns>
+            <tr>
+                <td [attr.colspan]="cols.length">
+                    No records found
+                </td>
+            </tr>
+        </ng-template>
+
+    </p-table>
+    <div *ngIf="trades !== undefined && trades.length > 0" style="padding-top: 25px;">
+      <p-chart type="line" [data]="data" height="500" width="500"></p-chart>
+    </div>
+</p-panel>
